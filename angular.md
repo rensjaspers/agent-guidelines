@@ -4,6 +4,33 @@ These guidelines are specific to Angular projects. See [AGENTS.md](./AGENTS.md) 
 
 ---
 
+## Tooling
+
+### Angular MCP Server
+
+**Always use** the Angular MCP server for Angular projects. It provides a safe, programmatic interface to the Angular CLI and should be used instead of direct shell commands.
+
+**Setup** (`.cursor/mcp.json`):
+
+```json
+{
+  "mcpServers": {
+    "angular-cli": {
+      "command": "npx",
+      "args": ["-y", "@angular/cli", "mcp"]
+    }
+  }
+}
+```
+
+**Workflow:**
+
+1. Always start with `list_projects` to understand workspace structure
+2. Call `get_best_practices` with `workspacePath` before writing or changing code
+3. Use `search_documentation` for conceptual questions
+
+---
+
 ## Angular Practices
 
 - Use the **modern template syntax** (`@if`, `@for`) instead of legacy `*ngIf` / `*ngFor`.
@@ -14,6 +41,15 @@ These guidelines are specific to Angular projects. See [AGENTS.md](./AGENTS.md) 
   ```ts
   obs$.pipe(takeUntilDestroyed()).subscribe();
   ```
+
+### Naming
+
+- **No type suffixes:** Angular's modern best practice is to **avoid** `.service`, `.component`, `.directive` or other type-related suffixes in class names.
+- **Transition is tricky:** Since much existing code still uses suffixes, pay extra attention to clear, descriptive names.
+- **Good naming is critical:** Choose names that describe the responsibility or domain, not the technical type.
+  - ❌ `UserService` → ✅ `UserRepository`, `UserStore`, `Authentication`
+  - ❌ `ModalComponent` → ✅ `Modal`, `Dialog`
+  - The name should make clear what the class does on its own
 
 ### Signals & RxJS Interop
 
