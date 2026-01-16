@@ -6,6 +6,7 @@ This document contains general guidelines for writing clear, maintainable code. 
 
 - [Angular-specific guidelines](./angular.md)
 - [Ionic-specific guidelines](./ionic.md)
+- [NestJS-specific guidelines](./nestjs.md)
 - [RxJS-specific guidelines](./rxjs.md)
 - [TypeScript-specific guidelines](./typescript.md)
 
