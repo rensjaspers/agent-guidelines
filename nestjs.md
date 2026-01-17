@@ -33,3 +33,8 @@ These guidelines are specific to NestJS projects. See [AGENTS.md](./AGENTS.md) f
 - **Never** create circular dependencies or use `forwardRef()` without explicit approval.
 - Circular dependencies indicate a design flaw and make code harder to understand and maintain.
 - If you encounter a need for circular references, refactor to break the cycle instead.
+
+### Module Design
+
+- **Watch for when it's time to split functionality into multiple modules** — don't let modules grow too large or take on too many responsibilities.
+- **Keep everything SOLID** — follow Single Responsibility Principle and other SOLID principles in module and service design.
