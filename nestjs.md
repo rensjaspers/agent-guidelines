@@ -11,6 +11,15 @@ These guidelines are specific to NestJS projects. See [AGENTS.md](./AGENTS.md) f
 
 ---
 
+## Architecture & Dependency Injection
+
+- **Always follow NestJS architecture** — never go outside the NestJS way of doing things.
+- Everything must be idiomatic NestJS. If you're not sure, **check the NestJS documentation** to see if there's a NestJS way to do it.
+- **Use NestJS Dependency Injection heavily** — it's the core of how NestJS works.
+- **Wrap external libraries in injectable services** for simplicity and testability. Don't use libraries directly — create a service that wraps them.
+
+---
+
 ## Modules
 
 ### Global Modules
