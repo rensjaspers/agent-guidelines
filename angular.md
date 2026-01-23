@@ -17,7 +17,6 @@ Always use the Angular MCP server instead of direct shell commands.
 
 ## Modern Angular
 
-- Use `@if`, `@for` instead of `*ngIf`, `*ngFor`
 - Prefer signals for inputs, outputs, `viewChild` — avoid legacy decorators
 - Avoid lifecycle hooks (`ngOnInit`, `ngOnDestroy`) — signals and field initializers usually suffice
 - Subscribe in constructor with cleanup:
