@@ -1,40 +1,27 @@
 # NestJS-specific Guidelines
 
-These guidelines are specific to NestJS projects. See [AGENTS.md](./AGENTS.md) for general guidelines.
+See [AGENTS.md](./AGENTS.md) for general guidelines.
 
 ---
 
 ## Code Generation
 
-- Use the **NestJS CLI** to generate components whenever possible (modules, services, controllers, resources, etc.).
-- This ensures consistent structure and follows NestJS conventions.
+Use the NestJS CLI to generate modules, services, controllers, and resources.
 
 ---
 
-## Architecture & Dependency Injection
+## Architecture
 
-- **Always follow NestJS architecture** — never go outside the NestJS way of doing things.
-- Everything must be idiomatic NestJS. If you're not sure, **check the NestJS documentation** to see if there's a NestJS way to do it.
-- **Use NestJS Dependency Injection heavily** — it's the core of how NestJS works.
-- **Wrap external libraries in injectable services** for simplicity and testability. Don't use libraries directly — create a service that wraps them.
+- Always follow idiomatic NestJS patterns — check docs if unsure
+- Wrap external libraries in injectable services
 
 ---
 
 ## Modules
 
-### Global Modules
+**Never without explicit approval:**
 
-- **Never** make modules global (using `isGlobal: true`) without explicit approval.
-- All dependencies should be explicit — avoid global magic that hides where things come from.
-- **Example:** When using the NestJS `ConfigModule`, import it in the `AppModule` but **do not** set `isGlobal: true`.
+- Global modules (`isGlobal: true`) — keep dependencies explicit
+- Circular dependencies / `forwardRef()` — refactor to break the cycle
 
-### Circular Dependencies
-
-- **Never** create circular dependencies or use `forwardRef()` without explicit approval.
-- Circular dependencies indicate a design flaw and make code harder to understand and maintain.
-- If you encounter a need for circular references, refactor to break the cycle instead.
-
-### Module Design
-
-- **Watch for when it's time to split functionality into multiple modules** — don't let modules grow too large or take on too many responsibilities.
-- **Keep everything SOLID** — follow Single Responsibility Principle and other SOLID principles in module and service design.
+**Keep modules focused** — split when responsibilities grow.

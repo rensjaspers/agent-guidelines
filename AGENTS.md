@@ -1,71 +1,46 @@
 # Agent Code Guidelines
 
-This document contains general guidelines for writing clear, maintainable code. For framework-specific guidelines, see the links below.
+## Framework Guidelines
 
-## Index
-
-- [Angular-specific guidelines](./angular.md)
-- [Ionic-specific guidelines](./ionic.md)
-- [NestJS-specific guidelines](./nestjs.md)
-- [RxJS-specific guidelines](./rxjs.md)
-- [TypeScript-specific guidelines](./typescript.md)
+- [Angular](./angular.md)
+- [Ionic](./ionic.md)
+- [NestJS](./nestjs.md)
+- [RxJS](./rxjs.md)
+- [TypeScript](./typescript.md)
 
 ---
 
-## Code Structure & Style
+## Style Rules
 
-- **One responsibility per class or function** — do one thing, do it well.
-- **Keep it small:**
-
-  - Functions ≤ 10 lines
-  - Classes ≤ 300 lines
-    Anything bigger is a signal to refactor.
-
-- **Refactor before committing:** ask "Can this be simpler or smaller?"
-- Use **early returns** to reduce nesting.
-- Always use **curly braces** with `if` statements.
-- Avoid complex **ternaries** — except in templates.
-- Prefer clear, readable expressions over clever tricks.
+- Functions ≤ 10 lines; classes ≤ 300 lines — refactor if larger
+- Always use curly braces with `if` statements
+- Avoid complex ternaries — except in templates
+- Use early returns to reduce nesting
 
 ---
 
-## Naming & Abstraction
+## DRY (pragmatic)
 
-- Choose names that describe **what** and **why**, not **how**.
-- Don't over-abstract — clarity beats cleverness.
-- Keep each function at **one abstraction level** (don't mix business logic with low-level details).
-- Short functions should **read like a story** from top to bottom.
+Do not write new logic before checking if it already exists. Do not force abstractions just to be DRY, but avoid structural duplication by reusing existing functions or patterns when it makes sense.
 
 ---
 
-## Comments & Documentation
+## Comments — Almost Never
 
-Only comment when the code can't explain itself.
-Valid cases:
+**Do NOT write comments.** Code should be self-explanatory.
 
-- Workarounds for buggy or inconsistent third-party APIs
-- Warnings about order, side effects, or hidden constraints
-- Deprecated code (include reason or issue link)
-- External or legal requirements
-- Non-obvious intent
-- TODO / FIXME with clear next steps or references
+The only valid exceptions:
 
-> Don't comment bad code — **rewrite it.**
+- Workarounds for buggy third-party APIs
+- Warnings about non-obvious side effects or constraints
+- Legal/compliance requirements
+- `TODO`/`FIXME` with issue reference
 
----
-
-## Refactoring Mindset
-
-- Be alert for duplication — extract a shared function if only small parts differ.
-- Favor **immutable data**; avoid variable reassignments.
-- Aim for **small, testable units** — easy to verify, easy to reuse.
-- Keep the codebase **boring** in a good way: predictable, simple, consistent.
+If code needs a comment to be understood, **rewrite the code** instead.
 
 ---
 
-## Build & Quality Gates
-
-Before finishing, ensure:
+## Before Finishing
 
 - No type errors
 - No lint errors

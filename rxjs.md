@@ -1,12 +1,11 @@
 # RxJS-specific Guidelines
 
-These guidelines are specific to RxJS usage. See [AGENTS.md](./AGENTS.md) for general guidelines.
+See [AGENTS.md](./AGENTS.md) for general guidelines.
 
 ---
 
-## RxJS & State
+## State Management
 
-- Keep all **state inside the stream**; don't mutate or track state externally.
-- Avoid unnecessary Subjects; derive data from existing streams.
-- Use **pure transformations** (`map`, `filter`, `switchMap`) instead of imperative logic.
-
+- Keep all state inside the stream — no external mutation
+- Avoid unnecessary Subjects; derive from existing streams
+- Use pure transformations (`map`, `filter`, `switchMap`) over imperative logic
