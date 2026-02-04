@@ -3,6 +3,7 @@
 ## By Topic
 
 - [Angular](./angular.md)
+- [Code Review](./code-review.md)
 - [CSS](./css.md)
 - [Ionic](./ionic.md)
 - [NestJS](./nestjs.md)
