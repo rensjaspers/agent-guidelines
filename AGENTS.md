@@ -1,14 +1,18 @@
 # Agent Code Guidelines
 
-## By Topic
+## Skills
 
-- [Angular](./angular.md)
-- [Code Review](./code-review.md)
-- [CSS](./css.md)
-- [Ionic](./ionic.md)
-- [NestJS](./nestjs.md)
-- [RxJS](./rxjs.md)
-- [TypeScript](./typescript.md)
+| Skill | Description |
+|-------|-------------|
+| [Angular](./skills/angular/angular.md) | Modern Angular patterns, signals, naming conventions |
+| [Angular / Forms](./skills/angular/forms/forms.md) | Form handling, validation, submit flow |
+| [Angular / Data Loading](./skills/angular/data-loading/data-loading.md) | rxResource, resource, TanStack Query |
+| [Code Review](./skills/code-review/code-review.md) | What to flag, what to ignore, review checklist |
+| [CSS](./skills/css/css.md) | Tailwind-first styling |
+| [Ionic](./skills/ionic/ionic.md) | Ionic CLI usage, icons, styling rules |
+| [NestJS](./skills/nestjs/nestjs.md) | CLI generation, architecture, module rules |
+| [RxJS](./skills/rxjs/rxjs.md) | Stream-based state, pure transformations |
+| [TypeScript](./skills/typescript/typescript.md) | Array methods, immutability, type checking |
 
 ---
 

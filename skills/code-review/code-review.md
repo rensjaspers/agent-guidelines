@@ -1,4 +1,4 @@
-# Code Review Guidelines
+# Code Review
 
 **Goal:** Prevent bugs. Ignore style, formatting, naming — linter handles that.
 

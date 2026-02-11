@@ -1,6 +1,6 @@
-# RxJS-specific Guidelines
+# RxJS
 
-See [AGENTS.md](./AGENTS.md) for general guidelines.
+See [AGENTS.md](../../AGENTS.md) for general guidelines.
 
 ---
 

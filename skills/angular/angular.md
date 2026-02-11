@@ -1,6 +1,6 @@
-# Angular-specific Guidelines
+# Angular
 
-See [AGENTS.md](./AGENTS.md) for general guidelines.
+See [AGENTS.md](../../AGENTS.md) for general guidelines.
 
 ---
 
