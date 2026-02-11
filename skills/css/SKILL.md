@@ -1,3 +1,8 @@
+---
+name: css
+description: CSS and Tailwind usage guidelines. Use when writing styles, working with Tailwind classes, or styling user-rendered content.
+---
+
 # CSS
 
 ## Tailwind

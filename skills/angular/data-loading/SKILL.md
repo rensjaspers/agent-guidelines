@@ -1,3 +1,8 @@
+---
+name: angular-data-loading
+description: Angular data loading patterns using TanStack Query, rxResource, and resource. Use when implementing data fetching, loading states, or error handling in Angular components.
+---
+
 # Data Loading
 
 See [AGENTS.md](../../../AGENTS.md) for general guidelines.

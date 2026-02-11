@@ -1,3 +1,8 @@
+---
+name: nestjs
+description: NestJS development guidelines covering CLI generation, architecture patterns, and module design. Use when writing or modifying NestJS backend code, modules, or services.
+---
+
 # NestJS
 
 See [AGENTS.md](../../AGENTS.md) for general guidelines.

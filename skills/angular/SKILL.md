@@ -1,3 +1,8 @@
+---
+name: angular
+description: Modern Angular development guidelines including signals, RxJS interop, naming conventions, and the Angular MCP server workflow. Use when writing or modifying Angular component, service, or directive code.
+---
+
 # Angular
 
 See [AGENTS.md](../../AGENTS.md) for general guidelines.

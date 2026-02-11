@@ -1,3 +1,8 @@
+---
+name: angular-forms
+description: Angular forms guidelines covering signal-based forms, reactive forms, validation, and submit handling. Use when creating or modifying forms in Angular.
+---
+
 # Angular Forms
 
 See [AGENTS.md](../../../AGENTS.md) for general guidelines.

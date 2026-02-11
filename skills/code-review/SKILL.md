@@ -1,3 +1,8 @@
+---
+name: code-review
+description: Code review checklist focused on bug prevention. Covers crashes, logic errors, security, memory leaks, and async issues. Use when reviewing pull requests, code changes, or when the user asks for a code review.
+---
+
 # Code Review
 
 **Goal:** Prevent bugs. Ignore style, formatting, naming — linter handles that.

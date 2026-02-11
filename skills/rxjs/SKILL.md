@@ -1,3 +1,8 @@
+---
+name: rxjs
+description: RxJS state management guidelines for keeping state inside streams and using pure transformations. Use when working with RxJS observables, Subjects, or reactive patterns.
+---
+
 # RxJS
 
 See [AGENTS.md](../../AGENTS.md) for general guidelines.

@@ -1,3 +1,8 @@
+---
+name: typescript
+description: TypeScript coding guidelines for array methods, immutability, and type checking. Use when writing TypeScript code.
+---
+
 # TypeScript
 
 See [AGENTS.md](../../AGENTS.md) for general guidelines.

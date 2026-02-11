@@ -1,3 +1,8 @@
+---
+name: ionic
+description: Ionic framework usage guidelines including CLI generation, Ionicons, and styling conventions. Use when working with Ionic components, pages, or generating Ionic artifacts.
+---
+
 # Ionic
 
 See [AGENTS.md](../../AGENTS.md) for general guidelines.
