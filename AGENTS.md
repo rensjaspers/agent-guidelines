@@ -30,11 +30,7 @@ Located in `.agents/skills/angular-*/` — these come from the [analogjs/angular
 | [angular-ssr](./.agents/skills/angular-ssr/) | Server-side rendering |
 | [angular-testing](./.agents/skills/angular-testing/) | Unit and integration testing |
 | [angular-tooling](./.agents/skills/angular-tooling/) | Angular CLI usage |
-
-**Personal Angular Preferences:**
-- [Angular Preferences](./.agents/guidelines/angular/preferences.md) — MCP server, naming, signals/RxJS rules
-- [Angular Forms](./.agents/guidelines/angular/forms.md) — Submit patterns, validation rules
-- [Angular Data Loading](./.agents/guidelines/angular/data-loading.md) — Strategy selection guide
+| [angular-preferences](./.agents/skills/angular-preferences/) | Personal preferences (MCP, naming, forms, data loading) |
 
 ### Other Skills
 
@@ -49,6 +45,8 @@ Located in `.agents/skills/angular-*/` — these come from the [analogjs/angular
 
 ## General Guidelines
 
-Located in `.agents/guidelines/`:
+Located in `.agents/guidelines/` (for reference and documentation):
 
 - [Code Style](./.agents/guidelines/code-style.md) — Function size, control flow, DRY, comments
+
+**Note:** The Angular-specific guidelines are consolidated into the `angular-preferences` skill for easier loading.
