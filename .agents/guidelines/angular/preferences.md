@@ -1,13 +1,6 @@
----
-name: angular
-description: Modern Angular development guidelines including signals, RxJS interop, naming conventions, and the Angular MCP server workflow. Use when writing or modifying Angular component, service, or directive code.
----
+# Personal Angular Guidelines
 
-# Angular
-
-See [AGENTS.md](../../AGENTS.md) for general guidelines.
-
----
+Additional guidelines that complement the Angular skills in `.agents/skills/`.
 
 ## Angular MCP Server
 
@@ -18,9 +11,7 @@ Always use the Angular MCP server instead of direct shell commands.
 1. `get_best_practices` with `workspacePath` — before writing code
 2. `search_documentation` — for conceptual questions
 
----
-
-## Modern Angular
+## Modern Angular Constraints
 
 - Prefer signals for inputs, outputs, `viewChild` — avoid legacy decorators
 - Avoid lifecycle hooks (`ngOnInit`, `ngOnDestroy`) — signals and field initializers usually suffice
@@ -30,16 +21,12 @@ Always use the Angular MCP server instead of direct shell commands.
   obs$.pipe(takeUntilDestroyed()).subscribe();
   ```
 
----
-
-## Naming
+## Naming Conventions
 
 **No type suffixes** — describe responsibility, not technical type:
 
 - ❌ `UserService` → ✅ `UserRepository`, `UserStore`, `Authentication`
 - ❌ `ModalComponent` → ✅ `Modal`, `Dialog`
-
----
 
 ## Signals & RxJS Interop
 
@@ -48,8 +35,6 @@ Always use the Angular MCP server instead of direct shell commands.
 - `computed()` is synchronous only — not for async streams
 - `toSignal()` only in injection context (causes immediate subscription)
 - Check latest Angular docs before working with signals/RxJS interop
-
----
 
 ## Before Finishing
 

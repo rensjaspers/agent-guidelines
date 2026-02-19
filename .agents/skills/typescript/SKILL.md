@@ -5,8 +5,6 @@ description: TypeScript coding guidelines for array methods, immutability, and t
 
 # TypeScript
 
-See [AGENTS.md](../../AGENTS.md) for general guidelines.
-
 ---
 
 ## Arrays

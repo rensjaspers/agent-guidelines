@@ -1,31 +1,15 @@
----
-name: angular-forms
-description: Angular forms guidelines covering signal-based forms, reactive forms, validation, and submit handling. Use when creating or modifying forms in Angular.
----
+# Angular Forms - Personal Guidelines
 
-# Angular Forms
+These guidelines augment the `angular-forms` skill in `.agents/skills/angular-forms/`.
 
-See [AGENTS.md](../../../AGENTS.md) for general guidelines.
-
----
-
-## Signal-based Forms
-
-- Angular 21+: use signal-based forms
-- For older versions: use reactive forms (`FormGroup`, `FormControl`)
-
----
-
-## Validation
+## Validation Rules
 
 - Use Angular's built-in form validation — do not implement validation logic outside of Angular forms
 - Never disable the submit button based on `form.invalid`
 - The submit button must always be enabled
 - Never manually track validation state with custom signals or variables — derive it from the form
 
----
-
-## Submit Handling
+## Submit Handling Pattern
 
 On submit:
 
@@ -42,3 +26,8 @@ onSubmit() {
   // submit logic
 }
 ```
+
+## Form Types
+
+- Angular 21+: use signal-based forms (see `angular-forms` skill)
+- For older versions: use reactive forms (`FormGroup`, `FormControl`)

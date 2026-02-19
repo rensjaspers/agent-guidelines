@@ -5,8 +5,6 @@ description: Ionic framework usage guidelines including CLI generation, Ionicons
 
 # Ionic
 
-See [AGENTS.md](../../AGENTS.md) for general guidelines.
-
 ---
 
 ## Ionic Usage

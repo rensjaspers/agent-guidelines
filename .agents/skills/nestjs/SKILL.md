@@ -5,8 +5,6 @@ description: NestJS development guidelines covering CLI generation, architecture
 
 # NestJS
 
-See [AGENTS.md](../../AGENTS.md) for general guidelines.
-
 ---
 
 ## Code Generation

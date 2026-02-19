@@ -1,53 +1,54 @@
 # Agent Code Guidelines
 
+This repository uses the `.agents` directory structure for organizing skills and guidelines.
+
+## Structure
+
+```
+.agents/
+  skills/          # Technical skills for specific frameworks and tools
+  guidelines/      # General coding guidelines and personal preferences
+```
+
 ## Skills
+
+Skills are specific, actionable knowledge about frameworks, libraries, and tools.
+
+### Angular Skills
+
+Located in `.agents/skills/angular-*/` — these come from the [analogjs/angular-skills](https://github.com/analogjs/angular-skills) package:
 
 | Skill | Description |
 |-------|-------------|
-| [Angular](./skills/angular/angular.md) | Modern Angular patterns, signals, naming conventions |
-| [Angular / Forms](./skills/angular/forms/forms.md) | Form handling, validation, submit flow |
-| [Angular / Data Loading](./skills/angular/data-loading/data-loading.md) | rxResource, resource, TanStack Query |
-| [Code Review](./skills/code-review/code-review.md) | What to flag, what to ignore, review checklist |
-| [CSS](./skills/css/css.md) | Tailwind-first styling |
-| [Ionic](./skills/ionic/ionic.md) | Ionic CLI usage, icons, styling rules |
-| [NestJS](./skills/nestjs/nestjs.md) | CLI generation, architecture, module rules |
-| [RxJS](./skills/rxjs/rxjs.md) | Stream-based state, pure transformations |
-| [TypeScript](./skills/typescript/typescript.md) | Array methods, immutability, type checking |
+| [angular-component](./.agents/skills/angular-component/) | Standalone components, signals, host bindings, accessibility |
+| [angular-di](./.agents/skills/angular-di/) | Dependency injection patterns |
+| [angular-directives](./.agents/skills/angular-directives/) | Custom directives and host directives |
+| [angular-forms](./.agents/skills/angular-forms/) | Signal-based forms API |
+| [angular-http](./.agents/skills/angular-http/) | HTTP data fetching with resource() |
+| [angular-routing](./.agents/skills/angular-routing/) | Lazy loading, guards, resolvers |
+| [angular-signals](./.agents/skills/angular-signals/) | Signal-based reactive state |
+| [angular-ssr](./.agents/skills/angular-ssr/) | Server-side rendering |
+| [angular-testing](./.agents/skills/angular-testing/) | Unit and integration testing |
+| [angular-tooling](./.agents/skills/angular-tooling/) | Angular CLI usage |
 
----
+**Personal Angular Preferences:**
+- [Angular Preferences](./.agents/guidelines/angular/preferences.md) — MCP server, naming, signals/RxJS rules
+- [Angular Forms](./.agents/guidelines/angular/forms.md) — Submit patterns, validation rules
+- [Angular Data Loading](./.agents/guidelines/angular/data-loading.md) — Strategy selection guide
 
-## Style Rules
+### Other Skills
 
-- Functions ≤ 10 lines; classes ≤ 300 lines — refactor if larger
-- Always use curly braces with `if` statements
-- Avoid complex ternaries — except in templates
-- Use early returns to reduce nesting
+| Skill | Description |
+|-------|-------------|
+| [code-review](./.agents/skills/code-review/) | Bug-focused code review checklist |
+| [css](./.agents/skills/css/) | Tailwind-first styling |
+| [ionic](./.agents/skills/ionic/) | Ionic CLI, components, styling |
+| [nestjs](./.agents/skills/nestjs/) | NestJS architecture patterns |
+| [rxjs](./.agents/skills/rxjs/) | Stream-based state management |
+| [typescript](./.agents/skills/typescript/) | Array methods, immutability |
 
----
+## General Guidelines
 
-## DRY (pragmatic)
+Located in `.agents/guidelines/`:
 
-Do not write new logic before checking if it already exists. Do not force abstractions just to be DRY, but avoid structural duplication by reusing existing functions or patterns when it makes sense.
-
----
-
-## Comments — Almost Never
-
-**Do NOT write comments.** Code should be self-explanatory.
-
-The only valid exceptions:
-
-- Workarounds for buggy third-party APIs
-- Warnings about non-obvious side effects or constraints
-- Legal/compliance requirements
-- `TODO`/`FIXME` with issue reference
-
-If code needs a comment to be understood, **rewrite the code** instead.
-
----
-
-## Before Finishing
-
-- No type errors
-- No lint errors
-- All tests pass
+- [Code Style](./.agents/guidelines/code-style.md) — Function size, control flow, DRY, comments

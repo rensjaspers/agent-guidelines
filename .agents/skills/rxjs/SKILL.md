@@ -5,8 +5,6 @@ description: RxJS state management guidelines for keeping state inside streams a
 
 # RxJS
 
-See [AGENTS.md](../../AGENTS.md) for general guidelines.
-
 ---
 
 ## State Management
