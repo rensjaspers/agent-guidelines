@@ -40,6 +40,8 @@ Located in `.agents/skills/angular-*/` — these come from the [analogjs/angular
 | [css](./.agents/skills/css/) | Tailwind-first styling |
 | [ionic](./.agents/skills/ionic/) | Ionic CLI, components, styling |
 | [nestjs](./.agents/skills/nestjs/) | NestJS architecture patterns |
+| [nestjs-config](./.agents/skills/nestjs-config/) | ConfigModule setup, explicit imports, validation, fallback pattern |
+| [nestjs-logging](./.agents/skills/nestjs-logging/) | Custom logger with ISO timestamps |
 | [rxjs](./.agents/skills/rxjs/) | Stream-based state management |
 | [typescript](./.agents/skills/typescript/) | Array methods, immutability |
 

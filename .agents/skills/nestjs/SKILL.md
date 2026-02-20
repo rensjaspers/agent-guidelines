@@ -25,6 +25,6 @@ Use the NestJS CLI to generate modules, services, controllers, and resources.
 **Never without explicit approval:**
 
 - Global modules (`isGlobal: true`) — keep dependencies explicit
-- Circular dependencies / `forwardRef()` — refactor to break the cycle
+- Circular dependencies / `forwardRef()` — always refactor to break the cycle first; if truly unavoidable, ask the user for permission before using `forwardRef()`, and add a comment explaining why it is needed
 
-**Keep modules focused** — split when responsibilities grow.
+**Keep modules focused** — split into submodules when responsibilities grow. The dependency graph must be clear and free of circular dependencies.
