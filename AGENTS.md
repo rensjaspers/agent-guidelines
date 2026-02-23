@@ -50,5 +50,6 @@ Located in `.agents/skills/angular-*/` — these come from the [analogjs/angular
 Located in `.agents/guidelines/` (for reference and documentation):
 
 - [Code Style](./.agents/guidelines/code-style.md) — Function size, control flow, DRY, comments
+- File moves: when asked to move files/folders, always use `mv`; do not recreate files. Manually update imports/paths where needed.
 
 **Note:** The Angular-specific guidelines are consolidated into the `angular-preferences` skill for easier loading.
