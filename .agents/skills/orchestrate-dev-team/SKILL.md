@@ -1,9 +1,9 @@
 ---
-name: orchestrate-large-task
-description: End-to-end orchestration workflow for large tasks. Use when a task needs research, planning, implementation, testing, linting, review, and release notes with explicit handoffs.
+name: orchestrate-dev-team
+description: Orchestrate a development team of subagents. Use when a task needs research, planning, implementation, testing, linting, review, and release notes with explicit handoffs.
 ---
 
-# Orchestrate Large Task
+# Orchestrate Dev Team
 
 Use this skill when a request is large, risky, or multi-step.
 
