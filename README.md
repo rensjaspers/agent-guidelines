@@ -21,21 +21,10 @@ templates/   # Project-specific .agent folder templates
 Run from your **project root** to install a template into `.agents/` without overwriting existing files:
 
 ```bash
-# Angular
-git clone https://github.com/rensjaspers/agents.git /tmp/agents-library && \
-  rsync -av --copy-links --ignore-existing /tmp/agents-library/templates/angular/ .agents/ && \
-  rm -rf /tmp/agents-library
-
-# Ionic + Angular
-git clone https://github.com/rensjaspers/agents.git /tmp/agents-library && \
-  rsync -av --copy-links --ignore-existing /tmp/agents-library/templates/ionic-angular/ .agents/ && \
-  rm -rf /tmp/agents-library
-
-# NestJS
-git clone https://github.com/rensjaspers/agents.git /tmp/agents-library && \
-  rsync -av --copy-links --ignore-existing /tmp/agents-library/templates/nestjs/ .agents/ && \
-  rm -rf /tmp/agents-library
+curl -fsSL https://raw.githubusercontent.com/rensjaspers/agents/main/scripts/install-template.sh | bash -s -- angular
 ```
+
+Replace `angular` with the name of the template you want (`angular`, `ionic-angular`, or `nestjs`).
 
 ## License
 
