@@ -1,9 +1,9 @@
 ---
-name: orchestrate-dev-team
-description: Orchestrate a development team of subagents. Use when a task needs research, planning, implementation, testing, linting, review, and release notes with explicit handoffs.
+name: build-with-team
+description: Build a feature or fix a bug using a team of specialist subagents. Use when a task needs research, planning, implementation, testing, linting, review, and release notes with explicit handoffs.
 ---
 
-# Orchestrate Dev Team
+# Build With Team
 
 Use this skill when a request is large, risky, or multi-step.
 
