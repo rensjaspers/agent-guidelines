@@ -10,18 +10,21 @@ Use this skill when a request is large, risky, or multi-step.
 ## Goal
 
 Complete complex work with a coordinated subagent pipeline:
-researcher -> planner -> implementer -> unit-tester -> linter -> reviewer -> release-notes-writer -> committer.
+scout -> planner -> implementer -> unit-tester -> linter -> reviewer -> release-notes-writer -> committer.
 
 ## Step-by-Step Process
 
-1. Start `researcher`
-   - Collect facts only (no guessing).
+1. Start `scout`
+   - Gather all available context from external sources: tickets, bug reports, user input, documentation.
    - Use context-hub MCP tools when available.
    - Ask user follow-up questions for missing context.
-   - Output a complete planning brief.
+   - Do **not** diagnose root causes or propose technical solutions.
+   - Output a clear, well-framed task description with all surrounding context.
 
 2. Start `planner`
-   - Build a detailed execution plan from researcher output (or user input if needed).
+   - Receive the task description from the scout.
+   - Analyse the codebase to understand what needs to change and how.
+   - Build a detailed execution plan grounded in actual code analysis.
    - Make steps concrete so lower-effort models can execute reliably.
    - Include verification steps, risks, and fallback options.
 

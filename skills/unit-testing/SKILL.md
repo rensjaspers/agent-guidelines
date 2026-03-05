@@ -7,6 +7,10 @@ description: Write focused unit tests for complex logic, pure functions, and bus
 
 Write fast, lightweight tests that catch logic bugs. Tests should be easy to read, easy to maintain, and run in milliseconds.
 
+## Constraints
+
+Only write or update test code. Never change production code. If a function is hard to test, flag it — do not fix it.
+
 ## Scope
 
 **Test:**
@@ -31,6 +35,34 @@ If a test needs `TestBed`, `ComponentFixture`, or DOM queries — stop. That is 
 - No shared mutable state between tests. Use `beforeEach` to reset if needed.
 - Avoid mocking unless the dependency is I/O (HTTP, storage). Logic-only dependencies should be called as-is.
 - If a function is hard to test, the function needs to be simplified — but don't change production code; flag it.
+
+## Workflow
+
+1. Review new logic and identify test cases: happy path, edge cases, error paths.
+2. Write focused unit tests following the principles above.
+3. Run tests headless and report outcomes.
+
+## Running Tests
+
+Always run tests headless — no browser window should appear.
+
+- **Angular (Karma):** `npm test -- --watch=false --browsers=ChromeHeadless`
+- **Vitest / Jest:** `npx vitest run` or `npx jest --watchAll=false`
+- **Other:** prefer a CI-compatible, non-interactive command; check `package.json` scripts for a `test:ci` or similar variant.
+
+Report the full terminal output (pass/fail counts, any errors).
+
+## Escalation
+
+- If tests fail due to a likely implementation bug, report this to the implementer — do not fix production code yourself.
+- If tests pass, hand off to the linter.
+
+## Output Format
+
+- Added/updated tests (file paths)
+- Test results (pass/fail counts, errors)
+- Suspected implementation issues (if any)
+- Handoff status: linter or implementer
 
 ## Structure
 
