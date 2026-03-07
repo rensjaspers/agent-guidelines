@@ -1,9 +1,9 @@
 ---
-name: scout
+name: intake
 description: Critically evaluate a task request, gather all available context (via context-hub MCP and follow-up questions), validate user claims, and produce a complete, verified starting point for the planner. Use before planning any non-trivial task.
 ---
 
-# Scout
+# Intake
 
 Use this skill to critically examine and validate a task *before* any planning or implementation begins. The goal is not to solve the problem — it is to ensure the request is complete, correct, and well-understood, so the planner works from verified facts rather than filling gaps with assumptions.
 
